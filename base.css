@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+body { margin: 0px; padding: 0px; font-family: arial, helvetica, sans-serif; color: #222;}
+header, nav, footer { display: block; }
+header { padding: 20px 0px 30px; background-color: #222; background: -moz-radial-gradient(50% 50%, farthest-side, #111, #222);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#222), to(#111));}
+.wrapper { margin: 0 auto; width: 800px; }
+.floatleft {float:left;}
+.floatright {float:right;}
+header .wrapper { background: url(header.png) no-repeat 0% 50%; }
+header img {margin-left: 390px; }
+nav { padding: 20px 0px 10px 0px; background-color: #333; background-image: -moz-linear-gradient(100% 100% 90deg, #222, #000); background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#000), to(#222)); }
+nav .wrapper ul { margin: 0 auto; width: 790px; }
+nav .wrapper ul li { margin: 0px 3px; padding-bottom: 13px; display: inline-block; color: white; font-size: 20px; }
+li.active { background: url(arrow.png) no-repeat 50% bottom; }
+nav .wrapper ul li a {padding: 8px 12px; color: white; text-decoration: none; background-color: #e80279; background-image: -moz-linear-gradient(100% 100% 90deg, #e81a84, #e80279); 
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#e81a84), to(#e80279)); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+#left { float: left; width: 380px; margin-right: 40px; margin-top: 30px; }
+#right { float: left; width: 380px; margin-top: 10px; }
+h1 { font-size: 26px; color: #e80279; margin-bottom: 20px; }
+h2 { font-size: 22px; color: #e80279; margin-bottom: 16px; }
+#left h2.twitter { color: #afe5f4; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; background: #44bcdc; padding: 4px 12px; }
+#left h2.twitter em { color: white; font-weight: bold; }
+h3 { font-weight: bold; font-weight: 14px; margin-bottom: 14px; }
+p { margin-bottom: 20px; }
+a { color: #e80279;}
+div#main { background-color: #f6f6f6; background-image: -moz-linear-gradient(100% 5% 90deg, #f6f6f6, #aaa); background-image: -webkit-gradient(linear, 50% 0%, 50% 10%, from(#bbb), to(#F6F6F6)); }
+#right a img { margin-bottom: 10px; }
+#right nav { background: url(support.png) no-repeat; height: 200px; padding: 60px 0px 0px 20px; margin-bottom: 20px; border-radius: 4px; 
+	-webkit-border-radius: 4px; -moz-border-radius: 4px; padding-right: 20px; }
+#right nav li { padding: 8px 12px; margin-bottom: 6px; width: 250px; }
+#right nav a { font-size: 20px; font-weight: bold; color: white; text-decoration: none;}
+#thimbl { background: #e80279; }
+#facebook { background: #43609c; }
+#twitter {background: #45bcdd; }
+#identica {background: #7bb12e; }
+
+/* sub page alterations */
+#sub-page header { padding: 0px; }
+#sub-page header .wrapper { width: 640px; height: 60px; padding-left: 160px; background: url(sub-logo.png) no-repeat left 50%; }
+#sub-page nav .wrapper ul { position: relative; top: 24px; }
+#sub-page nav .wrapper ul li { font-size: 14px; }
+#sub-page #left { width: 530px; }
+#sub-page #right { padding: 10px; background: #ccc; width: 210px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; min-height: 400px; }
+footer { width: 100%; background: #222; background-color: #333; background-image: -moz-linear-gradient(100% 100% 90deg, #222, #000); 
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#000), to(#222)); padding-bottom: 20px; }
+footer .wrapper { padding-top: 1px; }
+footer nav { padding: 15px 20px 0px 20px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; margin: 20px 0px; background: #111 url(footer.png) no-repeat 96% 55px; }
+footer nav ul li { float: left; display: inline-block; width: 240px; color: white; padding: 15px; font-size: 20px; margin: 0px 20px 20px 0px;  }
+footer nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+h5 { font-size: 30px; color: #e80279; margin-bottom: 5px;  }
+
+/* get started alternations */
+
+.choicebox {width: 450px; padding: 10px;
+background-color: #e3e3e3; margin: 10px 0;}
+
+div.choicebox h2 {width: 180px; font-size: 20px; font-weight: 500; margin:0; letter-spacing: -1px; word-spacing: +2px;}
+hr {width: 470px; border: 1px solid  #e3e3e3;  margin: 20px 0;}
+#tellmemore {width: 470px; margin: 0 0 190px 0; }
+div.cho
