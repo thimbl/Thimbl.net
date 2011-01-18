@@ -88,6 +88,7 @@
        moo = function getBlogXmlAndDump()
        {
            // Check we're on the right page...
+           // Is there a better way of doing this?
            var url = 'http://query.yahooapis.com/v1/public/yql?q='+ 
                      'select%20*%20from%20rss%20where%20url%3D%22h'+
                      'ttps%3A%2F%2Fwww.drumbeat.org%2Fnode%2F10987'+
