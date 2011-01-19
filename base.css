@@ -33,7 +33,6 @@ div#main { background-color: #f6f6f6; background-image: -moz-linear-gradient(100
 #facebook { background: #43609c; }
 #twitter {background: #45bcdd; }
 #identica {background: #7bb12e; }
-
 /* sub page alterations */
 #sub-page header { padding: 0px; }
 #sub-page header .wrapper { width: 640px; height: 60px; padding-left: 160px; background: url(sub-logo.png) no-repeat left 50%; }
@@ -41,6 +40,9 @@ div#main { background-color: #f6f6f6; background-image: -moz-linear-gradient(100
 #sub-page nav .wrapper ul li { font-size: 14px; }
 #sub-page #left { width: 530px; }
 #sub-page #right { padding: 10px; background: #ccc; width: 210px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; min-height: 400px; }
+/* on the getstarted page is no greybox so i added a class, in order to deactivate the grey box for this page */
+#sub-page #right.notgrey { padding: 10px; background: none; width: 210px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; min-height: 400px; } 
+/* ------ */
 footer { width: 100%; background: #222; background-color: #333; background-image: -moz-linear-gradient(100% 100% 90deg, #222, #000); 
 	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#000), to(#222)); padding-bottom: 20px; }
 footer .wrapper { padding-top: 1px; }
@@ -57,20 +59,24 @@ background-color: #e3e3e3; margin: 10px 0;}
 div.choicebox h2 {width: 180px; font-size: 20px; font-weight: 500; margin:0; letter-spacing: -1px; word-spacing: +2px;}
 hr {width: 470px; border: 1px solid  #e3e3e3;  margin: 20px 0;}
 #tellmemore {width: 470px; margin: 0 0 190px 0; }
+div.choicebox p {margin: 15px 15px 0 0;}
 
-/** DD lists **/
-dl dt {
-    font-weight: bold;
-    margin-top: 10px;
-}
-dl dd {
-    margin-left: 20px;
-}
-dl dd.smaller {
-    margin -left: 30px;
-    font-size: small;
-}
-dl {
-    margin-bottom: 20px;
+
+div.choicebox a {padding: 5px 10px; margin: 20px 0px 0 0; background-color: #e80279; color: white; text-decoration: none; font-weight: bold;}
+div.choicebox a:hover {padding: 5px 10px; margin: 20px 0px 0 0; background-color: #7bb12e; color: white; text-decoration: none; font-weight: bold;}
+div.choicebox p:hover {margin: 15px 15px 0 0; padding:  0 0 0 30px; height: 28px; background-image:url('haken.png');background-repeat: no-repeat; background-position: 0px -5px;
 }
 
+
+/* grey box award block */
+
+#rightaward h2 {background-image:url('blub.png');background-repeat: no-repeat;background-position: right;}
+#rightaward   {width: 210px; margin-bottom: 60px; }
+#rightaward img { float:left;}
+#rightaward p {display: block; font-size:0.8em; width:110px; margin-left: 100px; }
+#rightaward a { padding: 5px 10px; margin: -10px 0px 0 0; background-color: #e80279; color: white; text-decoration: none; font-weight: bold; float: right;}
+#rightaward a:hover {padding: 5px 10px; margin: -10px 0px 0 0; background-color: #7bb12e; color: white; text-decoration: none; font-weight: bold; float: right;}
+
+/* greybox rightpresentation */
+
+#rightpresentation h2 {background-image:url('blub.png');background-repeat: no-repeat;background-position: 160px ;}
