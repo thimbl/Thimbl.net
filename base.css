@@ -57,4 +57,20 @@ background-color: #e3e3e3; margin: 10px 0;}
 div.choicebox h2 {width: 180px; font-size: 20px; font-weight: 500; margin:0; letter-spacing: -1px; word-spacing: +2px;}
 hr {width: 470px; border: 1px solid  #e3e3e3;  margin: 20px 0;}
 #tellmemore {width: 470px; margin: 0 0 190px 0; }
-div.cho
+
+/** DD lists **/
+dl dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+dl dd {
+    margin-left: 20px;
+}
+dl dd.smaller {
+    margin -left: 30px;
+    font-size: small;
+}
+dl {
+    margin-bottom: 20px;
+}
+
