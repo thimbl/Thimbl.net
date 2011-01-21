@@ -84,9 +84,10 @@
 		</div>
 	</footer>
 	<script type="text/javascript">
-	// Read in the blog
+	    // Read in the blog
        moo = function getBlogXmlAndDump()
        {
+           
            // Check we're on the right page...
            // Is there a better way of doing this?
            var url = 'http://query.yahooapis.com/v1/public/yql?q='+ 
@@ -95,13 +96,16 @@
                      '4%2Fblog%2Ffeed%22&format=json';
 
            $.ajax({
+               async: false, // We need to wait and see if it works...
                type: "GET",
-           	url: url,
-           	dataType: "jsonp",
-           	success: function(str) {
-           	    console.log(str);
-                   // for each blog post
-                   $(str.query.results.item).each(function(key, value){                                
+           	   url: url,
+           	   dataType: "jsonp",
+           	   error: function(data) {
+           	       moo();
+           	   },
+           	   success: function(str) {
+           	        // for each blog post
+                    $(str.query.results.item).each(function(key, value){                                
                        var author  = value.author;
                        var title   = value.title;
                        var url     = value.link;
@@ -114,12 +118,12 @@
                            )
                            .appendTo('.blogItems');
                        $('#pleaseWait, .og_rss_groups').hide();
-                       
                    });
-           	}
+           	   }
            });
-       // And run it
+        // run it
        }();
+
     
 	</script>
 </body>
