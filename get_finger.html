@@ -1,0 +1,103 @@
+<?php
+    $page = 'Get Finger';
+    require_once('header.php');
+?>
+<div id='main'>
+	<div class='wrapper'>
+		<div id='left'>
+				 <h1>
+					Get finger
+				</h1>
+				<p>
+				    To be able to use Thimbl, you need to install finger (at 
+				    least, if you're) going to run it on your own server.
+				</p>
+				<h2>OK, so, what is finger?</h2>
+			    <p>
+			        From <a href="http://en.wikipedia.org/wiki/Finger_protocol">
+			            Wikpedia</a>:
+			        <blockquote>
+			        The Finger protocol and the Finger user information protocol 
+			        are simple network protocols for the exchange of human-oriented 
+			        status and user information.
+			        </blockquote>
+			    </p>
+			    <p>
+			        Got that? No? OK, the easy version is Finger is something
+			        which allows computers to pass small bits of status information
+			        back and forward across a network (in our case, the internet).
+			    </p>
+			    <p>
+			        Finger was first written in the 1970s and has been largely ignored
+			        until we came along and wrote Thimbl (see, a Thimble, fits 
+			        on a Finger, geddit?)
+			    </p>
+			    <h2>Right, so, what's xinetd?</h2>
+			    <p>
+			       From <a href="http://en.wikipedia.org/wiki/Xinetd">
+			           Wikipedia</a> (again):
+			       <blockquote>
+			       ... xinetd, the eXtended InterNET Daemon, is an open-source
+			        super-server daemon which runs on many Unix-like systems 
+			        and manages Internet-based connectivity. It offers a more 
+			        secure extension to or version of inetd, the Internet daemon.    
+			       </blockquote>
+			    </p>
+			    <p>
+			        Essentially, finger will connect to the internet using TCP
+			        wrappers it finds in xinetd
+			    </p>
+			    <h2>OK, that's enough, how do I install it and get it all ready for Thimbl?</h2>
+			    <ol>
+			        <li>Install the xinetd package using your package manager</li>
+			        <li>Install the finger package as above</li>
+			        <li>Edit your xinetd configuration to enable finger</li>
+			        <li>Make your users home directories allow the finger user to open them (i.e. chmod a+x)</li>
+			        <li>Make sure your .plan file allows the finger user to read it (i.e. chomd a+r)</li>
+			    </ol>
+			    <p>&nbsp;</p>
+		<div id="tellmemore">
+
+		<h2>
+			Tell me more
+		</h2>
+
+		<a class="floatleft" href="presentation.html"><img src="presentation_small.png" alt="Presentation"></a>
+		<a class="floatright" href="faq.html"><img src="faq.png" alt="faq this way" ></a>
+
+
+
+</div>
+
+		</div> 
+
+		<div id='right' class="notgrey">
+			<div id="rightaward">
+				<h2> 
+				Vote for Thimbl!
+				</h2>
+				<img src="award.png" alt="Award"></img>
+				<p>
+				We are nominated for the Transmediale/ Mozilla fondation Open Web Award!
+ 				</p>
+ 				<a href="award.html">Check it out!</a>
+	
+			</div>
+
+			<div style="clear: both;"></div>
+
+			<div id="rightpresentation">
+				<h2> 
+				What is Thimbl?
+				</h2>
+				<a href="presentation.html"><img src="presentation_small.png" alt="Presentation"></a>
+			</div>
+
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+</div>
+<?php require_once('footer.php'); ?>
+	
+</body>
+</html>
