@@ -117,3 +117,17 @@ dl {
     margin-bottom: 20px;
 }
 
+blockquote {
+    font-family: courier;
+    margin-left: 10px;
+    border-left: 5px solid #e80279;
+    padding-left: 10px;
+}
+
+#left ul, #left ol {
+    margin-left: 10px;
+}
+#left ul li, #left ol li {
+    list-style: decimal;
+    margin-left: 10px;
+}
