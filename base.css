@@ -76,6 +76,8 @@ div.choicebox a:hover {padding: 5px 10px; margin: 20px 0px 0 0; background-color
 div.choicebox p:hover {margin: 15px 15px 0 0; padding:  0 0 0 30px; height: 28px; background-image:url('haken.png');background-repeat: no-repeat; background-position: 0px -5px;
 }
 
+/* Pink box */
+.pinkBox { padding: 10px 10px; margin: -10px 0px 0 0; background-color: #e80279; color: white; text-decoration: none; font-weight: bold; }
 
 /* grey box award block */
 
