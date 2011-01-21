@@ -77,21 +77,17 @@ div.choicebox p:hover {margin: 15px 15px 0 0; padding:  0 0 0 30px; height: 28px
 #rightaward a { padding: 5px 10px; margin: -10px 0px 0 0; background-color: #e80279; color: white; text-decoration: none; font-weight: bold; float: right;}
 #rightaward a:hover {padding: 5px 10px; margin: -10px 0px 0 0; background-color: #7bb12e; color: white; text-decoration: none; font-weight: bold; float: right;}
 
-/* greybox rightpresentation */
+//* greybox rightpresentation */
 
 #rightpresentation h2 {background-image:url('blub.png');background-repeat: no-repeat;background-position: 160px ;}
-/** DD lists **/
-dl dt {
-    font-weight: bold;
-    margin-top: 10px;
-}
-dl dd {
-    margin-left: 20px;
-}
-dl dd.smaller {
-    margin -left: 30px;
-    font-size: small;
-}
-dl {
-    margin-bottom: 20px;
-}
+#rightpresentation {margin-bottom: 20px;}
+
+
+/* greybox share */
+
+#share {margin-bottom: 20px;}
+#share h2 {background-image:url('blub.png');background-repeat: no-repeat;background-position: 80px ;}
+div.border {width: 220px;  border: 7px solid #000; padding: 10px 0 0 0;}
+#share ul li {display: inline; margin: 10px;}
+
+
