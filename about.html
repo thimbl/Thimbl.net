@@ -1,51 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Thimbl - Free Open Source Distributed Micro-blogging</title>
-	<meta name="description" content="Welcome to thimbl, the free, open source, distributed micro-blogging platform. If you're tired of being locked in to one micro-blogging platform, or a single social network. Or you're weary of corporations hi-jacking your updates in the pursuit of money, then thimbl is for you." />
-	<link rel="image_src" type="image/png" href="presentation.png" />
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.2.0/build/cssreset/reset-min.css">
-	<link rel="stylesheet" type="text/css" href="base.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
-<body id="sub-page">
-
-<header>
-	<nav>
-		<div class="wrapper">
-			<ul>
-				<li>
-					<a href="/index.html">Home</a>
-				</li>
-				<li>
-					<a href="/blog.html">Blog</a>
-				</li>
-				<li>
-					<a href="/presentation.html">Presentation</a>
-				</li>
-				<li  class="active">
-					<a href="/about.html">About</a>
-				</li>
-				<li>
-					<a href="/contact.html">Contact</a>
-				</li>
-				<li>
-					<a href="/who.html">Who?</a>
-				</li>
-				<li>
-					<a href="/code.html">Code</a>
-				</li>
-				<li>
-					<a href="/award.html">Award</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-</header>
+<?php
+    $page = 'About';
+    require_once('header.php');
+?>
 <div id='main'>
 	<div class='wrapper'>
 		<div id='left'>
@@ -60,7 +16,7 @@
 				<a href="/faq.html">FAQs</a>
 			</h2>
 			<p>
-				Satisfies your need for a light overview.
+				Got a question about Thimbl? Check here first, it might already be answered.
 			</p>
 			<h2>
 				<a href="/manifesto.html">The Manifesto</a>
@@ -72,13 +28,30 @@
 				<a href="/how.html">The How</a>
 			</h2>
 			<p>
-				The common question - "Man, how this work?" - is not difficult to answer! Click this to see how Thimbl works.
+				The common question - "Man, how does this work?" - it's not difficult to answer!
 			</p>
 		</div>
-		<div id='right'>
-			<p>
-				
-			</p>
+		<div id='right' class="notgrey">
+			<div id="rightaward">
+				<h2> 
+				Vote for Thimbl!
+				</h2>
+				<img src="award.png" alt="Award"></img>
+				<p>
+				We are nominated for the Transmediale/ Mozilla fondation Open Web Award!
+ 				</p>
+ 				<a href="award.html">Check it out!</a>
+	
+			</div>
+
+			<div style="clear: both;"></div>
+
+			<div id="rightpresentation">
+				<h2> 
+				What is Thimbl?
+				</h2>
+				<a href="presentation.html"><img src="presentation_small.png" alt="Presentation"></a>
+			</div>
 		</div>
 		<div style="clear: both;"></div>
 	</div>

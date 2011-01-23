@@ -1,8 +1,12 @@
 @CHARSET "UTF-8";
 body { margin: 0px; padding: 0px; font-family: arial, helvetica, sans-serif; color: #222;}
 header, nav, footer { display: block; }
-header { padding: 20px 0px 30px; background-color: #222; background: -moz-radial-gradient(50% 50%, farthest-side, #111, #222);
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#222), to(#111));}
+header { 
+    padding: 20px 0px 30px; 
+    background-color: #222; 
+    background: -moz-radial-gradient(50% 50%, farthest-side, #111, #222);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#222), to(#111));
+}
 .wrapper { margin: 0 auto; width: 800px; }
 .floatleft {float:left;}
 .floatright {float:right;}
@@ -35,7 +39,12 @@ div#main { background-color: #f6f6f6; background-image: -moz-linear-gradient(100
 #identica {background: #7bb12e; }
 /* sub page alterations */
 #sub-page header { padding: 0px; }
-#sub-page header .wrapper { width: 640px; height: 60px; padding-left: 160px; background: url(sub-logo.png) no-repeat left 50%; }
+#sub-page header .wrapper { 
+    width: 640px; 
+    height: 60px; 
+    padding-left: 160px; 
+    background: url(sub-logo.png) no-repeat left top; 
+}
 #sub-page nav .wrapper ul { position: relative; top: 24px; }
 #sub-page nav .wrapper ul li { font-size: 14px; }
 #sub-page #left { width: 530px; }
@@ -67,6 +76,8 @@ div.choicebox a:hover {padding: 5px 10px; margin: 20px 0px 0 0; background-color
 div.choicebox p:hover {margin: 15px 15px 0 0; padding:  0 0 0 30px; height: 28px; background-image:url('haken.png');background-repeat: no-repeat; background-position: 0px -5px;
 }
 
+/* Pink box */
+.pinkBox { padding: 10px 10px; margin: -10px 0px 0 0; background-color: #e80279; color: white; text-decoration: none; font-weight: bold; }
 
 /* grey box award block */
 
@@ -90,4 +101,33 @@ div.choicebox p:hover {margin: 15px 15px 0 0; padding:  0 0 0 30px; height: 28px
 div.border {width: 220px;  border: 7px solid #000; padding: 10px 0 0 0;}
 #share ul li {display: inline; margin: 10px;}
 
+/** DD lists **/
+dl dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+dl dd {
+    margin-left: 20px;
+}
+dl dd.smaller {
+    margin -left: 30px;
+    font-size: small;
+}
+dl {
+    margin-bottom: 20px;
+}
 
+blockquote {
+    font-family: courier;
+    margin-left: 10px;
+    border-left: 5px solid #e80279;
+    padding-left: 10px;
+}
+
+#left ul, #left ol {
+    margin-left: 10px;
+}
+#left ul li, #left ol li {
+    list-style: decimal;
+    margin-left: 10px;
+}
