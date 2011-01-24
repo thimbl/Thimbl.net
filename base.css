@@ -88,7 +88,7 @@ div.choicebox p:hover {margin: 15px 15px 0 0; padding:  0 0 0 30px; height: 28px
 #rightaward a { padding: 5px 10px; margin: -10px 0px 0 0; background-color: #e80279; color: white; text-decoration: none; font-weight: bold; float: right;}
 #rightaward a:hover {padding: 5px 10px; margin: -10px 0px 0 0; background-color: #7bb12e; color: white; text-decoration: none; font-weight: bold; float: right;}
 
-//* greybox rightpresentation */
+/* greybox rightpresentation */
 
 #rightpresentation h2 {background-image:url('blub.png');background-repeat: no-repeat;background-position: 160px ;}
 #rightpresentation {margin-bottom: 20px;}
@@ -131,3 +131,8 @@ blockquote {
     list-style: decimal;
     margin-left: 10px;
 }
+/** contactform**/
+#contactform {width: 50%}
+#contactmail, #Message {width:100%; padding: 5px; border: 1px solid #e80279; margin-bottom: 10px; color: #222;} 
+#senden {padding: 5px 10px; margin: 0px 0px 0 0; background-color: #e80279; color: white; text-decoration: none; font-weight: bold;}
+#senden:hover {padding: 5px 10px; margin: 0px 0px 0 0; background-color: #7bb12e; color: white; text-decoration: none; font-weight: bold; }

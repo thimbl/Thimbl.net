@@ -8,11 +8,52 @@
 				 <h1>
 					Don't have either Thimbl or Finger?
 				</h1>
-				<p>
-				    No problem, just drop us an email at 
+					<p>
+				    No problem, just contact us via the contact form or drop us an email at 
 				    <a href="mailto:fingerme@thimbl.net">fingerme@thimbl.net</a>
 				    and we'll get you a finger account set up!
 				</p>
+				
+									<div id="formdiv">
+					<form id="contactform" method="POST" action="http://www.trick.ca/cgi-sys/formmail.pl">
+					<input type="hidden" name="recipient" value="info@telekommunisten.net">
+					<input type=hidden name="subject" value="Thimbl - Contact" >
+					<input type=hidden name="redirect" value="message_sent.html">
+					<input type=hidden name="required" value="email,__submit">
+					<input type=hidden name="env_report" value="REMOTE_HOST,HTTP_USER_AGENT">
+					<input type=hidden name="missing_fields_redirect" value="message_error.html">
+					<input name="email" id="contactmail"  value="Email Address" type="text" onfocus="if(this.value=='Email Address'){this.value=''};" onblur="if(this.value==''){this.value='Email Address'}"/><br />
+					<textarea name="Message" id="Message"   value="Your Message" type="text" onfocus="if(this.value=='Your Message'){this.value=''};" onblur="if(this.value==''){this.value='Your Message'}" cols="14" rows="4" wrap="soft"></textarea><br />
+					<input name="Submit" style="display:none;" type="submit" value="Send"/>
+					<span id="submit"></span>
+					</form>
+					</div>
+<script type="text/javascript">
+
+function _E(e) {
+  if(document.getElementById) {
+    e = document.getElementById(e);
+  } else if(document.all) {
+    e=document.all[e];
+  } else {
+    e=null;
+  }
+  return e;
+}
+
+function showSub() {
+  obj = _E('submit');
+  var newO=document.createElement('input');
+  newO.setAttribute('ID','senden');
+  newO.setAttribute('type','submit');
+  newO.setAttribute('name','__submit');
+  newO.setAttribute('value','Submit');
+  obj.parentNode.replaceChild(newO,obj);
+}
+
+showSub();
+
+</script>
 
 			    <p>&nbsp;</p>
 		<div id="tellmemore">
