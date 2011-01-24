@@ -18,10 +18,10 @@
 					<form id="contactform" method="POST" action="http://www.trick.ca/cgi-sys/formmail.pl">
 					<input type="hidden" name="recipient" value="info@telekommunisten.net">
 					<input type=hidden name="subject" value="Thimbl - Contact" >
-					<input type=hidden name="redirect" value="message_sent.html">
+					<input type=hidden name="redirect" value="http://www.thimbl.net/message_sent.html">
 					<input type=hidden name="required" value="email,__submit">
 					<input type=hidden name="env_report" value="REMOTE_HOST,HTTP_USER_AGENT">
-					<input type=hidden name="missing_fields_redirect" value="message_error.html">
+					<input type=hidden name="missing_fields_redirect" value="http://www.thimbl.net/message_error.html">
 					<input name="email" id="contactmail"  value="Email Address" type="text" onfocus="if(this.value=='Email Address'){this.value=''};" onblur="if(this.value==''){this.value='Email Address'}"/><br />
 					<textarea name="Message" id="Message"   value="Your Message" type="text" onfocus="if(this.value=='Your Message'){this.value=''};" onblur="if(this.value==''){this.value='Your Message'}" cols="14" rows="4" wrap="soft"></textarea><br />
 					<input name="Submit" style="display:none;" type="submit" value="Send"/>
