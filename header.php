@@ -7,7 +7,7 @@ get the framework treamtment next time I guess **/
 $pages = array (
         'Home'          => 'index.html',
         'Blog'          => 'blog.html',
-        'Community'	=> 'community.html',
+        'Community'	    => 'community.html',
         'About'         => 'about.html',
         'Get Started'   => 'get_started.html',
         'Who?'          => 'who.html',
