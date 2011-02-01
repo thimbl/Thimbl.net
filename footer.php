@@ -9,7 +9,7 @@
 			<ul>
 			    
 				<li id="thimbl">
-					<a href="http://www.drumbeat.org/project/thimbl-decentralized-micro-blogging-platform">Vote for Thimbl</a>
+					<a href="http://www.thimbl.net/award.html">Vote for Thimbl</a>
 				</li>
 				<li id="facebook">
 					<a href="http://www.facebook.com/telekommunisten">Like us on Facebook</a>
