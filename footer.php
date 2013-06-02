@@ -1,4 +1,3 @@
-
 <footer>
 	<div class="wrapper">
 		<nav>
@@ -18,6 +17,9 @@
 					<a href="http://www.twitter.com/thimbl">Follow us on Twitter</a>
 				<li id="identica">
 					<a href="http://identi.ca/thimbl">Follow us on Identi.ca</a>
+				</li>
+				<li id="github">
+					<a href="https://github.com/telekommunisten/Thimbl.net">Find the code on Github</a>
 				</li>
 			</ul>
 			<div style="clear: both;"></div>
